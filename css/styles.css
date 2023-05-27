@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 /*MENU NAVS*/
@@ -15,7 +15,9 @@ body {
 
 .menu-sas {
     background-color: #eaa731;
-    display: flow-root;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .menu-left {
@@ -87,6 +89,10 @@ body {
         color: #eaa731;
     }
 
+div {
+    display: flex;
+}
+
 #banner {
     display: flow-root;
 }
@@ -116,24 +122,34 @@ body {
                 background-color: white;
                 color: black;
                 border-radius: 5px;
+                justify-content: center;
+                align-items: center;
             }
             #banner .main-image .div-right .div1 span {
                 font-size: 40px;
+                justify-content: center;
+                align-items: center;
             }
             #banner .main-image .div-right .div2 {
                 width: 80%;
                 height: 40px;
                 margin: 0;
                 padding: 0;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 10px;
             }
             #banner .main-image .div-right .div2 span {
                 font-size: 20px;
+                font-weight: 700;
             }
             #banner .main-image .div-right .div3 {
                 width: 80%;
                 height: 40px;
                 margin: 0;
                 padding: 0;
+                justify-content: center;
+                align-items: center;
             }
             #banner .main-image .div-right .div3 button {
                 background-color: #EAA731;
