@@ -7,19 +7,37 @@ body {
     background-color: #222222;
     display: flow-root;
 }
-
     .menu-top .menu-left a {
         color: white;
         text-decoration: none;
     }
 
-.menu-sas {
+.menu-accesos {
     background-color: #eaa731;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+    .menu-accesos .menu-left{
+        font-size: x-large;
+    }
 
+    .menu-accesos .menu-left img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-accesos .menu-left .logo-text1{
+        color: #3a2312;
+        font-weight: 800;
+    }
+
+    .menu-accesos .menu-left .logo-text2{
+        color: white;
+        font-weight: 800;
+    }
+
+/* GENERAL */
 .menu-left {
     display: inline-flex;
     float: left;
@@ -60,34 +78,6 @@ body {
     content: "\f107";
     font-family: FontAwesome;
 }
-
-/* LOGO */
-.logo-text1 {
-    color: #3a2312;
-    font-weight: 700;
-    font-size: x-large;
-}
-
-.logo-text2 {
-    color: white;
-    font-weight: 700;
-    font-size: x-large;
-}
-
-#productos .list-products > div{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-    #productos .list-products label.description {
-        font-size: 18px;
-        font-weight: 600;
-        color: #3a2312;
-    }
-    #productos .list-products label.price {
-        font-size: 18px;
-        font-weight: 600;
-        color: #eaa731;
-    }
 
 div {
     display: flex;
@@ -160,6 +150,46 @@ div {
                 border-radius: 5px;
             }
 
+#productos{
+    text-align: center;
+}
+    #productos div{
+        display: block;
+    }
+    #productos #img1{
+        width: 100px;
+    }
+    #productos h2{
+        font-size: 60px; 
+        font-weight: 700; 
+        color: #3A2312;
+    }
+    #productos div h3{
+        color: #666666; font-size: 20px;
+    }
+    #productos .list-products{
+        display: flow-root;
+    }
+    #productos .list-products > div{
+        padding-left: 10px;
+        padding-right: 10px;
+        display: inline-flex;
+    }
+        #productos .list-products > div > img{
+            width: 100%;
+            height: 100%;
+        }
+        #productos .list-products label.description {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3a2312;
+        }
+        #productos .list-products label.price {
+            font-size: 18px;
+            font-weight: 600;
+            color: #eaa731;
+        }
+
 /* FOOTER */
 .footer-1 {
     background-color: #eaa731;
@@ -175,16 +205,26 @@ div {
         padding: 20px;
     }
 
+        .footer-1 .div-left a{
+            color: #FFFFFF; 
+            text-decoration: none; 
+            font-size: 25px; 
+            font-weight: 700;
+        }
+
     .footer-1 .div-right {
         display: inline-flex;
         float: right !important;
     }
+
+    
 
 .footer-2 {
     background-color: #3a2312;
     color: white;
     width: 100%;
     height: 200px;
+    display: flow-root;
 }
 
     .footer-2 .div-left {
@@ -212,6 +252,7 @@ div {
 
     .footer-2 .div-right{
         float: right;
+        display: flex;
     }
         .footer-2 .div-right .logo-text1 {
             color: #ffffff;
@@ -226,7 +267,7 @@ div {
         }
 
 .footer-3 {
-    background-color: #222222;
+    background-color: #eaa731; /*#222222;*/
     color: #ffffff;
     display: block;
     text-align: center;
